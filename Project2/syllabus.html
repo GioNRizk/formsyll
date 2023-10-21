@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus</title>
+    <link rel="icon" type="image/x-icon" href="../Project1/useklogo.png">
+    <link rel="stylesheet" href="./indexP2.css" />
+    <link rel="stylesheet" href="../Project1/indexP1.css" />
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="bt1" title="Go to top">&#8682;</button>
+    <div class="navbar">
+        <img style="float: left; text-align: center;" src="../Project1/useklogo.png" height="100"
+            onclick="window.location='../index.html'" />
+        <div class="navmini">
+            <a class="active" href="syllabus.html"></i> Syllabus </a>
+
+
+            <a href="../index.html"> Home</a>
+
+        </div>
+    </div>
+
+    </div>
+    <div id="form-to-fill" style="display: block;">
+        <form onsubmit="formSubmit(event)">
+            <h1 class="title5" style="margin-top: 20px;">Syllabus</h1>
+            <div class="cont">
+                <h3> Course Description:
+                    <h2> <textarea id="paragraph" name="CourseDesp" rows="6" placeholder="Enter Course Description"
+                            required autofocus autocomplete="on"></textarea> </h2>
+
+                </h3>
+                <h1>Course Information</h1>
+                <table>
+                    <tr>
+                        <td>Academic unit</td>
+                        <td>
+                            <h2>
+                                <input type="text" id="unit" name="unit" placeholder="Enter School Name" required>
+                            </h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Department</td>
+                        <td>
+                            <h2>
+                                <input type="text" id="department" name="department" placeholder="Enter Department name"
+                                    required>
+                            </h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Code</td>
+                        <td>
+                            <h2>
+                                <input type="text" id="code" name="code"
+                                    placeholder="Pattern: 3 letters followed by 3 digits" required>
+                            </h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>English Title</td>
+                        <td>
+                            <h2>
+                                <input type="text" id="title" name="title" placeholder="Enter English Title" required>
+                            </h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td>
+                            <input type="radio" id="type_c" name="type" value="C" checked>
+                            <label for="type_c">C</label>
+                            <input type="radio" id="type_ctp" name="type" value="CTP">
+                            <label for="type_ctp">CTP</label>
+                            <input type="radio" id="type_tp" name="type" value="TP">
+                            <label for="type_tp">TP</label>
+                            <input type="radio" id="type_p" name="type" value="P">
+                            <label for="type_p">P</label>
+                            <input type="radio" id="type_td" name="type" value="TD">
+                            <label for="type_td">TD</label>
+                            <input type="radio" id="type_s" name="type" value="S">
+                            <label for="type_s">S</label>
+                            <input type="radio" id="type_th" name="type" value="TH">
+                            <label for="type_th">TH</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pre-requisites</td>
+                        <td>
+                            <h2>
+                                <input type="text" id="pre" name="pre" placeholder="Enter Pre-requisite courses"
+                                    required>
+                            </h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Number of credits</td>
+                        <td>
+                            <h2>
+                                <select id="credits" name="credits">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3" selected>3</option>
+                                </select>
+                            </h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Contact hours per week</td>
+                        <td>
+                            <h2>
+                                <select id="hours" name="hours">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3" selected>3</option>
+                                </select>
+                            </h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Delivery Language</td>
+                        <td>
+                            <input type="radio" id="language_french" name="delivery_language" value="French" checked
+                                onclick="hideTextfield()">
+                            <label for="language_french">French</label>
+                            <input type="radio" id="language_english" name="delivery_language" value="English"
+                                onclick="hideTextfield()">
+                            <label for="language_english">English</label>
+                            <input type="radio" id="language_arabic" name="delivery_language" value="Arabic"
+                                onclick="hideTextfield()">
+                            <label for="language_arabic">Arabic</label>
+                            <br>
+
+                            <input type="radio" id="other" name="delivery_language" value="Other(Specify)"
+                                onclick="showTextField()">
+                            <label for="language_arabic">Other (Specify): &nbsp; <input type="text" id="SpecifyLanguage"
+                                    name="textField" placeholder="Enter your desired language"></label>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Term Offering</td>
+                        <td>
+
+                            <label for="Fall"><input type="checkbox" name="offered" value="Fall" checked>
+                                Fall</label><br>
+                            <label for="Spring"> <input type="checkbox" name="offered" value="Spring" checked>
+                                Spring</label><br>
+                            <label for="Summer"> <input type="checkbox" name="offered" value="Summer">
+                                Summer</label><br>
+
+
+
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Current Semester</td>
+                        <td>
+                            <select id="semester" name="semester">
+                                <option value="Fall">Fall</option>
+                                <option value="Spring">Spring</option>
+                                <option value="Summer">Summer</option>
+                            </select>
+                            <select id="year" name="year">
+                                <option value="2022-2023">2022-2023</option>
+                                <option value="2023-2024">2023-2024</option>
+                                <option value="2024-2025">2024-2025</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CRN</td>
+                        <td>
+                            <input type="number" id="crn" name="crn" value="10688" pattern="[0-9]{5}"
+                                title="CRN must be 5 digits">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Class Schedule</td>
+                        <td><label for="day">Select Days:</label>
+                            <br>
+                            <label for="day_M"><input type="checkbox" id="day_M" name="day" value="M">
+                                Monday</label><br>
+                            <label for="day_T"><input type="checkbox" id="day_T" name="day" value="T">
+                                Tuesday</label><br>
+                            <label for="day_W"><input type="checkbox" id="day_W" name="day" value="W">
+                                Wednesday</label><br>
+                            <label for="day_Th"><input type="checkbox" id="day_Th" name="day" value="Th">
+                                Thursday</label><br>
+                            <label for="day_F"><input type="checkbox" id="day_F" name="day" value="F">
+                                Friday</label><br>
+
+                            </br>
+                            <label for="day">Select Start and End Time:</label>
+                            <input type="time" id="start_time" name="start_time" required>
+
+                            <input type="time" id="end_time" name="end_time" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Instructor</th>
+                    </tr>
+                    <tr>
+                        <td>Name and Title</td>
+                        <td>
+                            <h2>
+                                <input type="text" id="fname" name="fname" placeholder="Instructor" autocomplete="on"
+                                    autocapitalize="on" required>
+                            </h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Category</td>
+                        <td><label for="Fall"><input type="checkbox" name="Category" id="Fall" value="Full Time"
+                                    checked> Fall</label><br>
+                            <label for="Spring"><input type="checkbox" name="Category" id="Spring" value="Part Time"
+                                    checked> Spring
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Office Hours</td>
+                        <td>
+                            <h2>
+                                <input type="text" id="office" name="office" placeholder="Enter Office Hours" required>
+                            </h2>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Email / Teams</td>
+
+                        <td>
+                            <h2>
+                                <input type="text" id="email" name="email" placeholder="Enter your work email"
+                                    autocomplete="on" autocapitalize="on" required>
+                            </h2></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Replies are to be expected within</td>
+                        <td>
+                            <input type="text" id="reply" name="reply"
+                                placeholder="Enter your reply time to a message or an email" autocomplete="on"
+                                autocapitalize="on" required>
+                        </td>
+                    </tr>
+
+
+
+                    </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Course Learning Outcomes (LOs)</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" id="learning" name="learning"
+                                placeholder="Enter the course Learning Outcomes" autocomplete="on" autocapitalize="on"
+                                required>
+                        </td>
+                    </tr>
+                    <!-- Add a new row for Course Material -->
+                    <tr>
+                        <th colspan="2">Course Material</th>
+                    </tr>
+                    <tr>
+                        <td>Required Materials</td>
+                        <td> <input type="text" id="grading" name="RequMaterial" placeholder="Enter Required Materials"
+                                autocomplete="on" autocapitalize="on" required></td>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Required Texts</td>
+                        <td> <input type="text" id="grading" name="RequText" placeholder="Enter Required text"
+                                autocomplete="on" autocapitalize="on" required></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Supplemental References</td>
+                        <td><input type="text" id="supp" name="supp" placeholder="Enter Supplemental References"
+                                autocomplete="on" autocapitalize="on" required></td>
+                    </tr>
+                    <tr>
+                        <td>Passing Grade</td>
+                        <td> <input type="text" id="grading" name="grading" placeholder="Enter passing grade"
+                                autocomplete="on" autocapitalize="on" required></td>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Grading Policy</td>
+                        <td><input type="text" id="policy" name="policy" placeholder="Enter Grading Policy"
+                                autocomplete="on" autocapitalize="on" required></td>
+                    </tr>
+                    <tr>
+                        <td>Grading Criteria (Total = 100%)</td>
+                        <td>
+                            <ul style="font-size: 20px;">
+                                <li>10% Active Participation</li>
+                                <li>35% Individual Projects</li>
+                                <li>10% Team Projects</li>
+                                <li>10% Research Papers</li>
+                                <li>35% Final Exam (The final exam shall have the highest percentage of the grade)</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+
+
+
+                </table>
+                <button type="submit" class="btn1">Submit Form</button>
+                <button type="reset" class="btn1">Reset Form</button>
+            </div>
+        </form>
+    </div>
+
+
+
+    <div id="form-filled" style="display:none;">
+        <h1 class="title5" style="margin-top: 20px;">Syllabus</h1>
+        <div class="cont">
+            <h3>Course Description: <span id="descp"></span></h3>
+            <h1>Course Information</h1>
+            <table>
+                <tr>
+                    <td>Academic unit</td>
+                    <td>
+                        <h2 class="output-head-style">
+                            <span id="user1"></span>
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Department</td>
+                    <td>
+                        <h2 class="output-head-style">
+                            <span id="department1"></span>
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Code</td>
+                    <td>
+                        <h2>
+                            <span id="code1"></span>
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>English Title</td>
+                    <td>
+                        <h2>
+                            <span id="title1"></span>
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Type</td>
+                    <td>
+                        <h2>
+                            <span id="type1"></span>
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pre-requisites</td>
+                    <td>
+                        <h2>
+                            <span id="pre1"></span>
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Number of credits</td>
+                    <td>
+                        <h2>
+                            <span id="credits1"></span>
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Contact hours per week</td>
+                    <td>
+                        <h2>
+                            <span id="hours1"></span>
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Delivery Language</td>
+                    <td>
+                        <h2>
+                            <span id="language1"></span>
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Offered</td>
+                    <td>
+                        <h2>
+                            <span id="offered1"></span>
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Current Semester</td>
+                    <td>
+                        <h2>
+                            <span id="semester1"></span>
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CRN</td>
+                    <td>
+                        <h2>
+                            <span id="crn1"></span>
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Class Schedule</td>
+                    <td>
+                        <h2>
+                            <span id="day1"></span>
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Start Time</td>
+                    <td>
+                        <h2>
+                            <span id="start_time1"></span>
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>End Time</td>
+                    <td>
+                        <h2>
+                            <span id="end_time1"></span>
+                        </h2>
+                    </td>
+                </tr>
+                <td>Name and Title</td>
+                <td>
+                    <h2>
+                        <span id="fname1"></span>
+                    </h2>
+                </td>
+                <tr>
+                    <td>Category </td>
+                    <td>
+                        <h2>
+                            <span id="category1"></span>
+                        </h2>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Office</td>
+                    <td>
+                        <h2>
+                            <span id="office1"></span>
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email and Teams </td>
+                    <td>
+                        <h2>
+                            <a href="" id="emailtoins"></a>
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Replies to be expected</td>
+                    <td>
+                        <h2>
+                            <span id="reply1"></span>
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Passing Gradind</td>
+                    <td>
+                        <h2>
+                            <span id="grading1"></span>
+                        </h2>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Policy</td>
+                    <td>
+                        <h2>
+                            <span id="policy1"></span>
+                        </h2>
+                    </td>
+                </tr>
+                <td>Grading Criteria (Total = 100%)</td>
+                <td>
+                    <ul>
+                        <h2>
+                            <li>10% Active Participation</li>
+                            <li>35% Individual Projects</li>
+                            <li>10% Team Projects</li>
+                            <li>10% Research Papers</li>
+                            <li>35% Final Exam (The final exam shall have the highest percentage of the grade)</li>
+                        </h2>
+                    </ul>
+                </td>
+
+
+            </table>
+            <button type="submit" class="btn1" onclick="editForm()">Edit Form</button>
+
+
+        </div>
+    </div>
+    <script src="form.js"></script>
+
+
+
+    <footer class="footer1">
+
+        <h3> &copy; This website is intended for learning purposes only as part of the GIN446 - Web
+            programming course.
+            <br />
+            Powered by Gio Nassif Rizk | All rights reserved &copy; 2023
+        </h3>
+
+    </footer>
+
+
+
+</body>
+
+</html>

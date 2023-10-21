@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <link rel="icon" type="image/x-icon" href="../Project1/useklogo.png">
+    <link rel="stylesheet" href="./indexP3.css" />
+   
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8682;</button>
+    <div class="navbar">
+        <img style="float: left; text-align: center;" src="../Project1/useklogo.png" height="100"
+            onclick="window.location='../index.html'" />
+        <div class="navmini">
+            <a class="active" href="javas.html">JavaScript Event</a>
+            <a href="../index.html">Home</a>
+        </div>
+    </div>
+    <script src="p3.js"></script>
+
+  
+
+
+    </div>
+    <br>
+
+   
+    <h1 style="text-align:center;">HTML DOM <span class="color_h1">Events</span></h1>
+        <hr>
+        <span class="header-text">
+            <p>HTML DOM events allow JavaScript to register different event handlers on
+                elements in an HTML document.</p>
+            <p>Events are normally used in combination with functions, and the function will not be executed before the
+                event occurs
+                (such as when a user clicks a button).</p>
+
+        </span>
+        <table class="ws-table-all notranslate">
+            <tr>
+                <th style="width:20%">Event</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>abort</td>
+                <td>The event occurs when the loading of a media is aborted</td>
+            </tr>
+            <tr>
+                <td>afterprint</td>
+                <td>The event occurs when a page has started printing, or if the print dialogue box has been closed</td>
+            </tr>
+            <tr>
+                <td>animationend</td>
+                <td>The event occurs when a CSS animation has completed</td>
+            </tr>
+            <tr>
+                <td>animationiteration</td>
+                <td>The event occurs when a CSS animation is repeated</td>
+            </tr>
+            <tr>
+                <td>animationstart</td>
+                <td>The event occurs when a CSS animation has started</td>
+            </tr>
+            <tr>
+                <td>beforeprint</td>
+                <td>The event occurs when a page is about to be printed</td>
+            </tr>
+            <tr>
+                <td>beforeunload</td>
+                <td>The event occurs before the document is about to be unloaded</td>
+
+            </tr>
+            <tr>
+                <td>blur</td>
+                <td>The event occurs when an element loses focus</td>
+            </tr>
+            <tr>
+                <td>canplay</td>
+                <td>The event occurs when the browser can start playing the media (when it has buffered
+                    enough to begin)</td>
+            </tr>
+            <tr>
+                <td>canplaythrough</td>
+                <td>The event occurs when the browser can play through the media without
+                    stopping for buffering</td>
+            </tr>
+            <tr>
+                <td>change</td>
+                <td>The event occurs when the content of a form element, the selection, or the checked state have
+                    changed
+                    (for &lt;input&gt;, &lt;select&gt;, and &lt;textarea&gt;)</td>
+            </tr>
+            <tr>
+                <td>click</td>
+                <td>The event occurs when the user clicks on an element</td>
+            </tr>
+            <tr>
+                <td>contextmenu</td>
+                <td>The event occurs when the user right-clicks on an element to open a context menu</td>
+            </tr>
+            <tr>
+                <td>copy</td>
+                <td>The event occurs when the user copies the content of an element</td>
+            </tr>
+            <tr>
+                <td>cut</td>
+                <td>The event occurs when the user cuts the content of an element</td>
+            </tr>
+            <tr>
+                <td>dblclick</td>
+                <td>The event occurs when the user double-clicks on an element</td>
+            </tr>
+            <tr>
+                <td>drag</td>
+                <td>The event occurs when an element is being dragged</td>
+            </tr>
+            <tr>
+                <td>dragend</td>
+                <td>The event occurs when the user has finished dragging an element</td>
+            </tr>
+            <tr>
+                <td>dragenter</td>
+                <td>The event occurs when the dragged element enters the drop target</td>
+            </tr>
+            <tr>
+                <td>dragleave</td>
+                <td>The event occurs when the dragged element leaves the drop target</td>
+            </tr>
+            <tr>
+                <td>dragover</td>
+                <td>The event occurs when the dragged element is over the drop target</td>
+            </tr>
+            <tr>
+                <td>dragstart</td>
+                <td>The event occurs when the user starts to drag an element</td>
+            </tr>
+            <tr>
+                <td>drop</td>
+                <td>The event occurs when the dragged element is dropped on the drop target</td>
+            </tr>
+            <tr>
+                <td>durationchange</td>
+                <td>The event occurs when the duration of the media is changed</td>
+            </tr>
+            <tr>
+                <td>ended</td>
+                <td>The event occurs when the media has reach the end (useful for messages like &quot;thanks for
+                    listening&quot;)</td>
+            </tr>
+            <tr>
+                <td>error</td>
+                <td>The event occurs when an error occurs while loading an external file </td>
+
+            </tr>
+            <tr>
+                <td>focus</td>
+                <td>The event occurs when an element gets focus</td>
+            </tr>
+            <tr>
+                <td>focusin</td>
+                <td>The event occurs when an element is about to get focus</td>
+            </tr>
+            <tr>
+                <td>focusout</td>
+                <td>The event occurs when an element is about to lose focus</td>
+            </tr>
+            <tr>
+                <td>fullscreenchange</td>
+                <td>The event occus when an element is displayed in fullscreen mode</td>
+            </tr>
+            <tr>
+                <td>fullscreenerror</td>
+                <td>The event occurs when an element can not be displayed in fullscreen mode</td>
+            </tr>
+            <tr>
+                <td>hashchange</td>
+                <td>The event occurs when there has been changes to the anchor part of a URL</td>
+            </tr>
+            <tr>
+                <td>input</td>
+                <td>The event occurs when an element gets user input</td>
+
+            </tr>
+            <tr>
+                <td>invalid</td>
+                <td>The event occurs when an element is invalid</td>
+            </tr>
+            <tr>
+                <td>keydown</td>
+                <td>The event occurs when the user is pressing a key</td>
+            </tr>
+            <tr>
+                <td>keypress</td>
+                <td>The event occurs when the user presses a key</td>
+            </tr>
+            <tr>
+                <td>keyup</td>
+                <td>The event occurs when the user releases a key</td>
+            </tr>
+            <tr>
+                <td>load</td>
+                <td>The event occurs when an object has loaded</td>
+                </td>
+            </tr>
+            <tr>
+                <td>loadeddata</td>
+                <td>The event occurs when media data is loaded</td>
+            </tr>
+            <tr>
+                <td>loadedmetadata</td>
+                <td>The event occurs when meta data (like dimensions and duration) are loaded</td>
+            </tr>
+            <tr>
+                <td>loadstart</td>
+                <td>The event occurs when the browser starts looking for the specified media</td>
+            </tr>
+            <tr>
+                <td>message</td>
+                <td>The event occurs when a message is received through the event source</td>
+            </tr>
+            <tr>
+                <td>mousedown</td>
+                <td>The event occurs when the user presses a mouse button over an element</td>
+            </tr>
+            <tr>
+                <td>mouseenter</td>
+                <td>The event occurs when the pointer is moved onto an element</td>
+            </tr>
+            <tr>
+                <td>mouseleave</td>
+                <td>The event occurs when the pointer is moved out of an element</td>
+            </tr>
+            <tr>
+                <td>mousemove</td>
+                <td>The event occurs when the pointer is moving while it is over an element</td>
+            </tr>
+            <tr>
+                <td>mouseover</td>
+                <td>The event occurs when the pointer is moved onto an element, or onto one of its children</td>
+            </tr>
+            <tr>
+                <td>mouseout</td>
+                <td>The event occurs when a user moves the mouse pointer out of an element, or out of one of its
+                    children
+                </td>
+            </tr>
+            <tr>
+                <td>mouseup</td>
+                <td>The event occurs when a user releases a mouse button over an element</td>
+            </tr>
+            <tr>
+                <td>mousewheel</td>
+                <td><span class="deprecated">Deprecated.</span> Use the
+                    >wheel event instead
+                </td>
+            </tr>
+            <tr>
+                <td>offline</td>
+                <td>The event occurs when the browser starts to work offline</td>
+            </tr>
+            <tr>
+                <td>online</td>
+                <td>The event occurs when the browser starts to work online</td>
+            </tr>
+            <tr>
+                <td>open</td>
+                <td>The event occurs when a connection with the event source is opened</td>
+            </tr>
+            <tr>
+                <td>pagehide</td>
+                <td>The event occurs when the user navigates away from a webpage</td>
+            </tr>
+            <tr>
+                <td style="height: 23px">pageshow</td>
+                <td style="height: 23px">The event occurs when the user navigates to a webpage</td>
+                </td>
+            </tr>
+            <tr>
+                <td>paste</td>
+                <td>The event occurs when the user pastes some content in an element</td>
+            </tr>
+            <tr>
+                <td>pause</td>
+                <td>The event occurs when the media is paused either by the user or
+                    programmatically</td>
+            </tr>
+            <tr>
+                <td>play</td>
+                <td>The event occurs when the media has been started or is no longer paused</td>
+            </tr>
+            <tr>
+                <td>playing</td>
+                <td>The event occurs when the media is playing after having been paused or stopped for buffering</td>
+            </tr>
+            <tr>
+                <td>popstate</td>
+                <td>The event occurs when the window's history changes</td>
+            </tr>
+            <tr>
+                <td>progress</td>
+                <td>The event occurs when the browser is in the process of getting the media
+                    data (downloading the media)</td>
+            </tr>
+            <tr>
+                <td>ratechange</td>
+                <td>The event occurs when the playing speed of the media is changed</td>
+            </tr>
+            <tr>
+                <td>resize</td>
+                <td>The event occurs when the document view is resized</td>
+                </td>
+            </tr>
+            <tr>
+                <td>reset</td>
+                <td>The event occurs when a form is reset</td>
+            </tr>
+            <tr>
+                <td>scroll</td>
+                <td>The event occurs when an element's scrollbar is being scrolled</td>
+                </td>
+            </tr>
+            <tr>
+                <td>search</td>
+                <td>The event occurs when the user writes something in a search field (for
+                    &lt;input=&quot;search&quot;&gt;)
+                </td>
+            </tr>
+            <tr>
+                <td>seeked</td>
+                <td>The event occurs when the user is finished moving/skipping to a new position
+                    in the media</td>
+            </tr>
+            <tr>
+                <td>seeking</td>
+                <td>The event occurs when the user starts moving/skipping to a new position in
+                    the media</td>
+            </tr>
+            <tr>
+                <td>select</td>
+                <td>The event occurs after the user selects some&nbsp;text (for &lt;input&gt; and &lt;textarea&gt;)</td>
+                </td>
+            </tr>
+            <tr>
+                <td>show</td>
+                <td>The event occurs when a &lt;menu&gt; element is shown as a context menu</td>
+            </tr>
+            <tr>
+                <td>stalled</td>
+                <td>The event occurs when the browser is trying to get media data, but data is not available</td>
+            </tr>
+            <tr>
+                <td>storage</td>
+                <td>The event occurs when a Web Storage area is updated</td>
+            </tr>
+            <tr>
+                <td>submit</td>
+                <td>The event occurs when a form is submitted</td>
+            </tr>
+            <tr>
+                <td>suspend</td>
+                <td>The event occurs when the browser is intentionally not getting media data</td>
+            </tr>
+            <tr>
+                <td>timeupdate</td>
+                <td>The event occurs when the playing position has changed (like when the user
+                    fast forwards to a different point in the media)</td>
+            </tr>
+            <tr>
+                <td>oggle</td>
+                <td>The event occurs when the user opens or closes the &lt;details&gt; element</td>
+            </tr>
+            <tr>
+                <td>touchcancel</td>
+                <td>The event occurs when the touch is interrupted</td>
+            </tr>
+            <tr>
+                <td>touchend</td>
+                <td>The event occurs when a finger is removed from a touch screen</td>
+            </tr>
+            <tr>
+                <td>touchmove</td>
+                <td>The event occurs when a finger is dragged across the screen</td>
+            </tr>
+            <tr>
+                <td>touchstart</td>
+                <td>The event occurs when a finger is placed on a touch screen</td>
+            </tr>
+            <tr>
+                <td>transitionend</td>
+                <td>The event occurs when a CSS transition has completed</td>
+            </tr>
+            <tr>
+                <td>unload</td>
+                <td>The event occurs once a page has unloaded (for &lt;body&gt;)</td>
+                </td>
+            </tr>
+            <tr>
+                <td>volumechange</td>
+                <td>The event occurs when the volume of the media has changed (includes setting the
+                    volume to &quot;mute&quot;)</td>
+            </tr>
+            <tr>
+                <td>waiting</td>
+                <td>The event occurs when the media has paused but is expected to resume (like
+                    when the media pauses to buffer more data)</td>
+            </tr>
+            <tr>
+                <td>wheel</td>
+                <td>The event occurs when the mouse wheel rolls up or down over an element</td>
+            </tr>
+        </table>
+
+
+
+        <br>
+        <br>
+
+
+
+        <h2 style="text-align:center;">HTML DOM Event Properties and Methods</h2>
+        <table class="ws-table-all notranslate">
+            <tr>
+                <th style="width:20%">Property/Method</th>
+                <th colspan="2">Description</th>
+            </tr>
+            <tr>
+                <td>altKey</td>
+                <td colspan="2">Returns whether the &quot;ALT&quot; key was pressed when the mouse event was triggered
+
+            </tr>
+            <tr>
+                <td>altKey</td>
+                <td colspan="2">Returns whether the &quot;ALT&quot; key was pressed when the key event was triggered
+
+            </tr>
+            <tr>
+                <td>animationName</td>
+                <td colspan="2">Returns the name of the animation</td>
+            </tr>
+            <tr>
+                <td>bubbles</td>
+                <td colspan="2">Returns whether or not a specific event is a bubbling event</td>
+            </tr>
+            <tr>
+                <td>button</td>
+                <td colspan="2">Returns which mouse button was pressed when the mouse event was triggered</td>
+            </tr>
+            <tr>
+                <td>buttons</td>
+                <td colspan="2">Returns which mouse buttons were pressed when the mouse event was triggered</td>
+            </tr>
+            <tr>
+                <td>cancelable</td>
+                <td colspan="2">Returns whether or not an event can have its default action prevented</td>
+            </tr>
+            <tr>
+                <td>charCode</td>
+                <td colspan="2">Returns the Unicode character code of the key that triggered the onkeypress event</td>
+            </tr>
+            <tr>
+                <td>changeTouches</td>
+                <td colspan="2">Returns a list of all the touch objects whose state changed between the
+                    previous touch and this touch</td>
+            </tr>
+            <tr>
+                <td>clientX</td>
+                <td colspan="2">Returns the horizontal coordinate of the mouse pointer, relative to the current window,
+                    when
+                    the mouse event was triggered</td>
+                </td>
+            </tr>
+            <tr>
+                <td>clientY</td>
+                <td colspan="2">Returns the vertical coordinate of the mouse pointer, relative to the current window,
+                    when
+                    the mouse event was triggered</td>
+                </td>
+            </tr>
+            <tr>
+                <td>clipboardData</td>
+                <td colspan="2">Returns an object containing the data affected by the clipboard
+                    operation</td>
+            </tr>
+            <tr>
+                <td>code</td>
+                <td colspan="2">Returns the code of the key that triggered the event</td>
+            </tr>
+            <tr>
+                <td>composed</td>
+                <td colspan="2">Returns whether the event is composed or not </td>
+            </tr>
+            <tr>
+                <td>ctrlKey</td>
+                <td colspan="2">Returns whether the &quot;CTRL&quot; key was pressed when the mouse event was triggered
+                </td>
+            </tr>
+            <tr>
+                <td>ctrlKey</td>
+                <td colspan="2">Returns whether the &quot;CTRL&quot; key was pressed when the key event was triggered
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>currentTarget</td>
+                <td colspan="2">Returns the element whose event listeners triggered the event</td>
+            </tr>
+            <tr>
+                <td>data</td>
+                <td colspan="2">Returns the inserted characters</td>
+            </tr>
+            <tr>
+                <td>dataTransfer</td>
+                <td colspan="2">Returns an object containing the data being dragged/dropped, or
+                    inserted/deleted</td>
+            </tr>
+            <tr>
+                <td>defaultPrevented</td>
+                <td colspan="2">Returns whether or not the preventDefault() method was called for the event</td>
+            </tr>
+            <tr>
+                <td>deltaX</td>
+                <td colspan="2">Returns the horizontal scroll amount of a mouse wheel (x-axis)</td>
+            </tr>
+            <tr>
+                <td>deltaY</td>
+                <td colspan="2">Returns the vertical scroll amount of a mouse wheel (y-axis)</td>
+            </tr>
+            <tr>
+                <td>deltaZ</td>
+                <td colspan="2">Returns the scroll amount of a mouse wheel for the z-axis</td>
+            </tr>
+            <tr>
+                <td>deltaMode</td>
+                <td colspan="2">Returns a number that represents the unit of measurements for delta values (pixels,
+                    lines or
+                    pages)</td>
+            </tr>
+            <tr>
+                <td>detail</td>
+                <td colspan="2">Returns a number that indicates how many times the mouse was clicked</td>
+            </tr>
+            <tr>
+                <td>elapsedTime</td>
+                <td colspan="2">Returns the number of seconds an animation has been running</td>
+            </tr>
+            <tr>
+                <td>elapsedTime</td>
+                <td colspan="2">Returns the number of seconds a transition has been running</td>
+            </tr>
+            <tr>
+                <td>eventPhase</td>
+                <td colspan="2">Returns which phase of the event flow is currently being evaluated</td>
+            </tr>
+            <tr>
+                <td>getTargetRanges()</td>
+                <td colspan="2">Returns an array containing target ranges that will be affected by the
+                    insertion/deletion</td>
+            </tr>
+            <tr>
+                <td>getModifierState()</td>
+                <td colspan="2">Returns an array containing target ranges that will be affected by the
+                    insertion/deletion</td>
+            </tr>
+            <tr>
+                <td>inputType</td>
+                <td colspan="2">Returns the type of the change (i.e &quot;inserting&quot; or &quot;deleting&quot;)</td>
+            </tr>
+            <tr>
+                <td>isComposing</td>
+                <td colspan="2">Returns whether the state of the event is composing or not</td>
+                </td>
+            </tr>
+            <tr>
+                <td>isTrusted</td>
+                <td colspan="2">Returns whether or not an event is trusted</td>
+            </tr>
+            <tr>
+                <td>key</td>
+                <td colspan="2">Returns the key value of the key represented by the event</td>
+            </tr>
+            <tr>
+                <td>key</td>
+                <td colspan="2">Returns the key of the changed storage item</td>
+            </tr>
+            <tr>
+                <td>keyCode</td>
+                <td colspan="2">Returns the Unicode character code of the key that triggered the onkeypress event, or
+                    the
+                    Unicode key code of the key that triggered the onkeydown or
+                    onkeyup event</td>
+            </tr>
+            <tr>
+                <td>location</td>
+                <td colspan="2">Returns the location of a key on the keyboard or device</td>
+            </tr>
+            <tr>
+                <td>lengthComputable</td>
+                <td colspan="2">Returns whether the length of the progress can be computable or not</td>
+            </tr>
+            <tr>
+                <td>loaded</td>
+                <td colspan="2">Returns how much work has been loaded</td>
+            </tr>
+            <tr>
+                <td>metaKey</td>
+                <td colspan="2">Returns whether the &quot;META&quot; key was pressed when an event was triggered</td>
+            </tr>
+            <tr>
+                <td>metaKey</td>
+                <td colspan="2">Returns whether the &quot;meta&quot; key was pressed when the key event was triggered
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>MovementX</td>
+                <td colspan="2">Returns the horizontal coordinate of the mouse pointer relative to the
+                    position of the last mousemove event</td>
+            </tr>
+            <tr>
+                <td>MovementY</td>
+                <td colspan="2">Returns the vertical coordinate of the mouse pointer relative to the
+                    position of the last mousemove event</td>
+            </tr>
+            <tr>
+                <td>newValue</td>
+                <td colspan="2">Returns the new value of the changed storage item</td>
+            </tr>
+            <tr>
+                <td>newURL</td>
+                <td colspan="2">Returns the URL of the document, after the hash has been changed</td>
+            </tr>
+            <tr>
+                <td>offsetX</td>
+                <td colspan="2">Returns the horizontal coordinate of the mouse pointer relative to the
+                    position of the edge of the target element</td>
+            </tr>
+            <tr>
+                <td>offsetY</td>
+                <td colspan="2">Returns the vertical coordinate of the mouse pointer relative to the
+                    position of the edge of the target element</td>
+            </tr>
+            <tr>
+                <td>oldValue</td>
+                <td colspan="2">Returns the old value of the changed storage item</td>
+            </tr>
+            <tr>
+                <td>oldURL</td>
+                <td colspan="2">Returns the URL of the document, before the hash was changed</td>
+            </tr>
+            <tr>
+                <td>onemptied</td>
+                <td colspan="2">The event occurs when something bad happens and the media file is suddenly
+                    unavailable (like unexpectedly disconnects)</td>
+            </tr>
+            <tr>
+                <td>pageX</td>
+                <td colspan="2">Returns the horizontal coordinate of the mouse pointer, relative to the document, when
+                    the
+                    mouse event was triggered</td>
+            </tr>
+            <tr>
+                <td>pageY</td>
+                <td colspan="2">Returns the vertical coordinate of the mouse pointer, relative to the document, when the
+                    mouse event was triggered</td>
+            </tr>
+            <tr>
+                <td>persisted</td>
+                <td colspan="2">Returns whether the webpage was cached by the browser</td>
+            </tr>
+            <tr>
+                <td>preventDefault()</td>
+                <td colspan="2">Cancels the event if it is cancelable, meaning that the default action that belongs to
+                    the
+                    event will not occur</td>
+            </tr>
+            <tr>
+                <td>propertyName</td>
+                <td colspan="2">Returns the name of the CSS property associated with the animation or transition</td>
+                </td>
+            </tr>
+            <tr>
+                <td>pseudoElement</td>
+                <td colspan="2">Returns the name of the pseudo-element of the animation or transition</td>
+                </td>
+            </tr>
+            <tr>
+                <td>region</td>
+                <td colspan="2"> Belongs to HTML DOM Mouse</td>
+            </tr>
+            <tr>
+                <td>relatedTarget</td>
+                <td colspan="2">Returns the element related to the element that triggered the mouse event</td>
+            </tr>
+            <tr>
+                <td>relatedTarget</td>
+                <td colspan="2">Returns the element related to the element that triggered the event</td>
+            </tr>
+            <tr>
+                <td>repeat</td>
+                <td colspan="2">Returns whether a key is being hold down repeatedly, or not</td>
+            </tr>
+            <tr>
+                <td>screenX</td>
+                <td colspan="2">Returns the horizontal coordinate of the mouse pointer, relative to the screen, when an
+                    event was triggered</td>
+            </tr>
+            <tr>
+                <td>screenY</td>
+                <td colspan="2">Returns the vertical coordinate of the mouse pointer, relative to the screen, when an
+                    event
+                    was triggered</td>
+            </tr>
+            <tr>
+                <td>shiftKey</td>
+                <td colspan="2">Returns whether the &quot;SHIFT&quot; key was pressed when an event was triggered</td>
+            </tr>
+            <tr>
+                <td>shiftKey</td>
+                <td colspan="2">Returns whether the &quot;SHIFT&quot; key was pressed when the key event was triggered
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>state</td>
+                <td colspan="2">Returns an object containing a copy of the history entries</td>
+            </tr>
+            <tr>
+                <td>stopImmediatePropagation()</td>
+                <td>Prevents other listeners of the same event from being called</td>
+            </tr>
+            <tr>
+                <td>stopPropagation()</td>
+                <td colspan="2">Prevents further propagation of an event during event flow</td>
+            </tr>
+            <tr>
+                <td>storageArea</td>
+                <td colspan="2">Returns an object representing the affected storage object</td>
+            </tr>
+            <tr>
+                <td>target</td>
+                <td colspan="2">Returns the element that triggered the event</td>
+            </tr>
+            <tr>
+                <td>targetTouches</td>
+                <td colspan="2">Returns a list of all the touch objects that are in contact with the
+                    surface and where the touchstart event occured on the same target element as
+                    the current target element</td>
+            </tr>
+            <tr>
+                <td>timeStamp</td>
+                <td colspan="2">Returns the time (in milliseconds relative to the epoch) at which the event was created
+                </td>
+            </tr>
+            <tr>
+                <td>total</td>
+                <td colspan="2">Returns the total amount of work that will be loaded</td>
+            </tr>
+            <tr>
+                <td>touches</td>
+                <td colspan="2">Returns a list of all the touch objects that are currently in contact with
+                    the surface</td>
+            </tr>
+            <tr>
+                <td>transitionend</td>
+                <td colspan="2">The event occurs when a CSS transition has completed</td>
+            </tr>
+            <tr>
+                <td>type</td>
+                <td colspan="2">Returns the name of the event</td>
+            </tr>
+            <tr>
+                <td>url</td>
+                <td colspan="2">Returns the URL of the changed item's document</td>
+            </tr>
+            <tr>
+                <td>which</td>
+                <td colspan="2">Returns which mouse button was pressed when the mouse event was triggered</td>
+            </tr>
+            <tr>
+                <td>which</td>
+                <td colspan="2">Returns the Unicode character code of the key that triggered the onkeypress event, or
+                    the
+                    Unicode key code of the key that triggered the onkeydown or
+                    onkeyup event</td>
+            </tr>
+            <tr>
+                <td>view</td>
+                <td colspan="2">Returns a reference to the Window object where the event occurred</td>
+            </tr>
+        </table>
+
+
+
+</body>
+
+
+
+
+
+    <footer class="footer1">
+
+        <h3 id="textfooter"> &copy; This website is intended for learning purposes only as part of the GIN446 - Web
+            programming course.
+            <br />
+            Powered by Gio Nassif Rizk | All rights reserved &copy; 2023
+        </h3>
+
+    </footer>
+
+</body>
+
+</html>
